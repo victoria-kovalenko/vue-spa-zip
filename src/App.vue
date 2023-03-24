@@ -1,11 +1,13 @@
 <script>
 import Loader from './components/Loader.vue'
 import Form from './components/Form.vue'
+import Card from './components/Card.vue'
 
 export default {
   components: {
     Loader,
-    Form
+    Form,
+    Card
   },
   data() {
     return {
@@ -29,6 +31,8 @@ export default {
     <Loader v-if="!isValidZIP"></Loader>
     
     <Form  v-else></Form>
+
+    <Card/>
   </main>
 </template>
 
